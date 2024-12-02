@@ -1,0 +1,8 @@
+General packages/crates used in rust
+
+1. actix - to create fast http servers
+2. serde - for serialization and deserialization of data (structs to json)
+3. tokio - asynchronous runtime in rust
+4. http - for sending http requests (similar to axios)
+5. sqlx - to connect to sql database
+6. chrono - datetime

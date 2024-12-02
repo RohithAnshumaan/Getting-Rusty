@@ -5,7 +5,7 @@ fn main() {
     println!("string_2 died. The heap memory for the string is freed.");
     //println!("{}", string_1); ---> doesn't compile as string_1 died after transferring ownership to string_2
     //one solution (cloning) ---> string_2 = string_1.clone();
-    let mut string_3 = String::from("this is string in heap"); //make it mutable so that ownership can be obtained through returns.
+    let mut string_3 = String::from("this is string in heap"); //second solution ---> make it mutable so that ownership can be obtained through returns
     println!("string_3 = {}", string_3);
     string_3 = takes_and_returns_ownership(string_3);
     println!("ownership returned to string_3 from string_4 inside function.");
